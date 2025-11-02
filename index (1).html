@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Energy Innovation Hub – Kenya</title>
+  <style>
+    :root{
+      --accent:#0a6cff;
+      --bg:#0b1220;
+      --card:#101a2e;
+      --text:#e6eefc;
+      --muted:#b8c6e0;
+      --pill:#162445;
+      --ok:#18c28e;
+      --warn:#ffb020;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:linear-gradient(180deg, #091225 0%, #0c1426 100%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    header{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background:rgba(9,18,37,0.75);
+      border-bottom:1px solid #132442;
+    }
+    .wrap{max-width:1200px;margin:0 auto;padding:16px 20px}
+    nav{display:flex;align-items:center;gap:18px;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .brand .logo{
+      width:36px;height:36px;border-radius:10px;
+      background: radial-gradient(120% 120% at 10% 10%, #4ec9f5 0%, #0a6cff 40%, #7a5cff 85%);
+      box-shadow:0 10px 30px rgba(10,108,255,.35), inset 0 0 20px rgba(255,255,255,.12);
+    }
+    .menu a{
+      color:var(--muted);text-decoration:none;font-weight:600;padding:8px 10px;border-radius:10px
+    }
+    .menu a:hover{background:var(--pill);color:var(--text)}
+    .cta{
+      background:var(--accent);padding:10px 14px;border-radius:12px;color:white;text-decoration:none;font-weight:700;
+      box-shadow:0 6px 22px rgba(10,108,255,.35);
+    }
+    .hero{padding:60px 20px 30px}
+    .hero h1{font-size:40px;line-height:1.15;margin:0 0 10px}
+    .hero p{color:var(--muted);max-width:820px;margin:0 0 18px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+    .badge{background:var(--pill);border:1px solid #1c2b50;color:#cfe2ff;padding:6px 10px;border-radius:100px;font-size:13px}
+    .grid{
+      display:grid;grid-template-columns:repeat(12,1fr);gap:16px;
+      padding:10px 20px 60px;
+    }
+    .card{
+      grid-column: span 4;
+      background:var(--card);
+      border:1px solid #14264a;border-radius:16px;padding:16px;
+      box-shadow:0 10px 24px rgba(0,0,0,.25);
+      display:flex;flex-direction:column;gap:10px;
+    }
+    .card h3{margin:0 0 4px}
+    .pill{font-size:12px;display:inline-flex;align-items:center;gap:6px;background:var(--pill);border:1px solid #21335e;padding:4px 8px;border-radius:999px;color:#cde}
+    .meta{display:flex;gap:8px;flex-wrap:wrap}
+    .card p{color:var(--muted);margin:0}
+    .card a{align-self:flex-start}
+    .kpi{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px
+    }
+    .kpi div{background:#0f1a30;border:1px solid #13264b;border-radius:12px;padding:10px}
+    .kpi .n{font-weight:800;font-size:20px}
+    footer{
+      border-top:1px solid #132442;background:#0a1327;color:#a9b9d7;padding:26px 20px
+    }
+    .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:20px}
+    ul{list-style:none;padding:0;margin:10px 0}
+    li{margin:6px 0}
+    a{color:#9cc4ff}
+    .notice{
+      background:#0d1a34;border:1px dashed #23427a;color:#cbd9f4;padding:10px 12px;border-radius:12px;margin-top:10px
+    }
+    @media (max-width: 900px){
+      .card{grid-column: span 6;}
+      .cols{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .card{grid-column: span 12;}
+      .hero h1{font-size:32px}
+      nav .menu{display:none}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Smart Energy Innovation Hub – Kenya</span>
+      </div>
+      <div class="menu">
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#partners">Partners</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="cta" href="#enroll">Enroll / Get Support</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero wrap">
+  <h1>Affordable, Reliable, and Green Energy for Communities & SMEs</h1>
+  <p>Our hub accelerates access to clean power, productive-use appliances, and digital energy services across Kenyan counties.
+     We offer advisory, training, micro‑financing linkages, and a marketplace that connects households, cooperatives, and small businesses to vetted providers.</p>
+  <div class="badges">
+    <span class="badge">Solar + Mini‑grids</span>
+    <span class="badge">Productive Use of Energy (PUE)</span>
+    <span class="badge">Energy Efficiency</span>
+    <span class="badge">Cold‑chain & Irrigation</span>
+    <span class="badge">Skills & Jobs</span>
+  </div>
+</section>
+
+<section id="services" class="grid wrap">
+  <!-- Service cards -->
+  <article class="card">
+    <div class="meta">
+      <span class="pill">Portal Service</span>
+      <span class="pill">Self‑service</span>
+    </div>
+    <h3>Energy Readiness Check</h3>
+    <p>Answer 10 questions and receive a tailored pathway: grid, solar home system, productive-use bundle, or efficiency upgrades.</p>
+    <div class="kpi">
+      <div><div class="n">10k+</div><div>assessments</div></div>
+      <div><div class="n">82%</div><div>action rate</div></div>
+      <div><div class="n">4.7★</div><div>user rating</div></div>
+    </div>
+    <a class="cta" href="#">Start Assessment</a>
+  </article>
+
+  <article class="card">
+    <div class="meta">
+      <span class="pill">Center Service</span>
+      <span class="pill">Advisor‑led</span>
+    </div>
+    <h3>Productive Use Advisory</h3>
+    <p>Design mini‑grid & PUE bundles (e.g., milling, refrigeration, e‑mobility charging) with cash‑flow models and pay‑as‑you‑go options.</p>
+    <a class="cta" href="#">Book a Session</a>
+  </article>
+
+  <article class="card">
+    <div class="meta">
+      <span class="pill">Marketplace</span>
+      <span class="pill">Verified</span>
+    </div>
+    <h3>Vendor & Finance Hub</h3>
+    <p>Browse vetted vendors, micro‑finance and SACCO partners. Compare TCO, warranties, and after‑sales support before you buy.</p>
+    <a class="cta" href="#">Explore Offers</a>
+  </article>
+
+  <article class="card">
+    <div class="meta">
+      <span class="pill">Training</span>
+      <span class="pill">Certifications</span>
+    </div>
+    <h3>Skills & Jobs</h3>
+    <p>Short courses for technicians and youth: solar installation, O&M, energy audits, and safety—linked to local job boards.</p>
+    <a class="cta" href="#">See Courses</a>
+  </article>
+
+  <article class="card">
+    <div class="meta">
+      <span class="pill">Data</span>
+      <span class="pill">Open</span>
+    </div>
+    <h3>Open Energy Data</h3>
+    <p>Access county energy maps, load profiles, and mini‑grid opportunity datasets to support planning and research.</p>
+    <a class="cta" href="#">Browse Datasets</a>
+  </article>
+
+  <article class="card">
+    <div class="meta">
+      <span class="pill">Support</span>
+      <span class="pill">Live</span>
+    </div>
+    <h3>Help & Ticketing</h3>
+    <p>24/7 support via chat/WhatsApp and community forums. Track installation tickets and warranty claims.</p>
+    <a class="cta" href="#">Get Help</a>
+  </article>
+</section>
+
+<section id="about" class="wrap">
+  <h2>About Us</h2>
+  <p>The Smart Energy Innovation Hub – Kenya is a blended virtual + physical center connecting communities with clean energy solutions.
+     We partner with county governments, utilities, universities, and private innovators to enable reliable power and productive livelihoods.</p>
+  <div class="notice">Model: <strong>Mixed (Portal + Physical Center)</strong> — combines a national self‑service portal with county‑level centers for demonstrations, training, and last‑mile support.</div>
+</section>
+
+<section id="partners" class="wrap">
+  <h2>Partners</h2>
+  <ul>
+    <li>County Governments & Rural Electrification Bodies</li>
+    <li>Mini‑grid Developers & Solar Vendors</li>
+    <li>MFIs, SACCOs & Impact Investors</li>
+    <li>Universities & TVETs</li>
+    <li>NGOs & Community‑Based Organizations</li>
+  </ul>
+</section>
+
+<section id="news" class="wrap">
+  <h2>News & Updates</h2>
+  <ul>
+    <li>Nov 2025 – Launch of Open Energy Data v1: county load profiles and PUE opportunities.</li>
+    <li>Oct 2025 – Pilot of e‑mobility charging at market centers in Kisumu & Makueni.</li>
+  </ul>
+</section>
+
+<section id="contact" class="wrap">
+  <h2>Contact</h2>
+  <p>Email: info@seih-kenya.org • WhatsApp: +254 700 000 000 • HQ: Nairobi; Centers: Kisumu, Nakuru, Makueni</p>
+</section>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <strong>Smart Energy Innovation Hub – Kenya</strong>
+      <p>Accelerating clean, reliable, and productive energy for communities and SMEs.</p>
+    </div>
+    <div>
+      <strong>Explore</strong>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </div>
+    <div>
+      <strong>Programs</strong>
+      <ul>
+        <li>Mini‑grids</li>
+        <li>Solar Home Systems</li>
+        <li>PUE Bundles</li>
+        <li>Energy Efficiency</li>
+      </ul>
+    </div>
+    <div>
+      <strong>Legal</strong>
+      <ul>
+        <li>Terms</li>
+        <li>Privacy</li>
+        <li>Cookies</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:10px;color:#8ea4c9">© 2025 SEIH-Kenya. All rights reserved.</div>
+</footer>
+</body>
+</html>
